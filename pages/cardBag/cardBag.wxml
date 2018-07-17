@@ -1,0 +1,55 @@
+<!--pages/cardBag/cardBag.wxml-->
+<view class="box">
+ <!--waike  -->
+ <view class="section">
+ <image src="../images/word/sousuo.png"></image>
+    <input placeholder="宝宝智力开发" focus="{{focus}}" />
+</view>
+<!--轮播  -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:100px;">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!--选项卡  -->
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">智慧服务</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">宝宝医疗</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">育宝课堂</view>
+</view>
+ 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <!-- 我是哈哈 -->
+    <swiper-item>
+      <view class="list-zhfw" wx:for="{{smartdata}}" wx:key="*this">
+      <image src="{{item.url}}"></image> <text>{{item.name}}</text>
+      
+      </view>
+    </swiper-item>
+    <!-- 我是呵呵 -->
+    <swiper-item>
+      <view class="list-zhfw" wx:for="{{smartdata02}}" wx:key="*this">
+      <image src="{{item.url}}"></image> <text>{{item.name}}</text>
+      
+      </view>
+    </swiper-item>
+    <!-- 我是嘿嘿 -->
+    <swiper-item>
+      <view class="list-video-box">
+<!-- <image wx:for="{{videodata}}" src="{{item.url}}"id="{{item.path}}" bindtap='jumpPages'></image> -->
+<view class="list-video"wx:for="{{videodata}}"wx:key="*this"id="{{item.path}}" bindtap="jumpPages">
+<image src="{{item.url}}"></image>
+<view class="video-title">{{item.name}}</view>
+<view class="video-man">{{item.man}}</view>
+</view>
+
+
+
+</view>
+    </swiper-item>
+</swiper>
+
+ <!--waike  -->
+</view>

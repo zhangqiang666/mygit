@@ -1,0 +1,58 @@
+/* pages/service/service.wxss */
+.box{
+  width:95%;
+  margin:0 auto;
+}
+/**index.wxss**/
+.swiper-tab{
+	width: 100%;
+	border-bottom: 1rpx solid #DBD8D8;
+	text-align: center;
+	line-height: 100rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+	width: 33.33%;
+	color: #777777;
+}
+.on{ color:#000000;
+	border-bottom: 5rpx solid #000000;}
+ 
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+	/* text-align: center; */
+
+	/* text-align: center; */
+}
+.list-car-box{
+  width:100%;
+  height:200px;
+  border-bottom:1rpx solid #DBD8D8;
+}
+.list-header{
+  width:100%;
+  height:50px;
+  line-height:50px;
+  font-size: 14px;
+  color:#000000;
+
+}
+.header-left{
+  float:left;
+}
+.header-right{
+  float:right;
+}
+.centent-left{
+  width:30%;
+  line-height: 30px;
+  float:left;
+  font-size: 14px;
+  color:#777777;
+}
+.centent-right{
+  width:70%;
+  line-height:30px;
+  float:left;
+  font-size: 14px;
+  color:#777777;
+}

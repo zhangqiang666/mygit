@@ -1,0 +1,37 @@
+<!--pages/addbaby/addbaby.wxml-->
+<view class="box">
+<!--box  -->
+<view class="addbaby-left">
+<view class="addbaby-left-list"> 
+<text>宝宝姓名</text>
+ <input placeholder="点击输入名字" focus="{{focus}}" />
+ </view>
+ <view class="addbaby-left-list"> 
+<text>宝宝生日</text>
+<view class="birday-right"> 
+<picker mode="date" value="{{date}}"  bindchange="bindDateChange">
+        <view class="picker">
+             {{date}}
+        </view>
+    </picker>
+    </view>
+ </view>
+</view>
+<!--right  -->
+<view class="addbaby-right">
+<view class="baby-img">
+<!-- <image src="https://s6.postimg.cc/lwa4jyjk1/20180706498804.png" wx:if="{{avatarUrl==null}}"></image> -->
+ <!-- <image class="userinfo-avatar" wx:else src="{{avatarUrl}}" mode="cover"></image> -->
+  <open-data type="userAvatarUrl" class="avatar-name-open"></open-data>
+ 
+
+</view>
+</view>
+<radio-group class="radio-group" bindchange="radioChange">
+    <label class="radio" wx:for="{{items}}" wx:key="*this">
+        <radio value="{{item.name}}" checked="{{item.checked}}"class="radio-i"/>{{item.value}}
+    </label>
+</radio-group>
+<view class="doctor-btn">保存</view>
+<!--box  -->
+</view>

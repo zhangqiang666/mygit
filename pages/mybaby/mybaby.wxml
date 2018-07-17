@@ -1,0 +1,21 @@
+<!--pages/address/address.wxml-->
+<view class="box">
+<!--box  -->
+ <!-- <view class="baby-list" wx:for="{{babydata}}" wx:key="*this"id="addbaby" bindtap='jumpPages'>
+ <image src="{{item.url}}"></image>
+ </view> -->
+ <view class="baby-list-box" wx:for="{{babydata}}" wx:key="*this"id="addbaby" bindtap='jumpPages'>
+ <image src="{{item.url}}" class="baby-list-img"></image>
+ <image src="../images/word/man.png" class="baby-sex"></image>
+ <view class="baby-list-main">
+ <view>{{item.title}}</view>
+ <view>{{item.time}}</view>
+ </view>
+  <image src="../images/word/bianji.png" class="baby-book-i"></image>
+ <!--box  -->
+ </view>
+ <!--  -->
+<view class="doctor-btn" id="addbaby" bindtap='jumpPages'>添加宝宝</view>
+<!--box  -->
+</view>
+

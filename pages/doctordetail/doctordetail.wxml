@@ -1,0 +1,21 @@
+<!--pages/doctordetail/doctordetail.wxml-->
+<view class="box">
+<!--box  -->
+
+<view class="yylc-header">
+<text>预约流程须知</text>
+</view>
+<!--  -->
+<view class="yylc-centent">
+<view>上门时间确认后不予退款但可重新预约，该服务仅限上海地区x周岁以内的家庭适用。</view>
+<view>若有疑问请致电客服：400-000-000</view>
+</view>
+<!--  -->
+<view class="yylc-header">
+<text>私人医生半年套餐服务内容介绍</text>
+</view>
+<!--  -->
+<view class="doctor-btn">点击联系客服 享受服务</view>
+<!--box  -->
+</view>
+

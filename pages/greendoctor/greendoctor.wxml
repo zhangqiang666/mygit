@@ -1,0 +1,27 @@
+<!--pages/ssdoctor/ssdoctor.wxml-->
+<view class="box">
+<!--box  -->
+<view class="ssys-header">
+就医绿色通道服务介绍
+</view>
+<view class="ssys-centent">
+ 大医院律绿色通道,我们有专人上门接送
+ 挂号/住院/手术/出院后医生随访、病历资料云存储永久保存保存等,一切
+ 都不需要您操心.为您解决去大医院看病难的问题.填写基本信息后提交申请,客服将在5分钟内联系您！
+</view>
+<!--  -->
+<view class="section">
+    <input class="name" placeholder="   输入您的姓名" focus="{{focus}}" bindtap="bindButtonTap"/>
+     <input class="name" placeholder="   输入您的手机号" focus="{{focusphone}}" bindtap="bindButtonTapphone"/>
+     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="pickerman">
+                {{array[index]}}
+        </view>
+    </picker>
+    <textarea class="problem" bindblur="bindTextAreaBlur"  placeholder="  输入你想咨询的问题" />
+    
+</view>
+<!--  -->
+<view class="doctor-btn">提交申请</view>
+<!--box  --> 
+</view>

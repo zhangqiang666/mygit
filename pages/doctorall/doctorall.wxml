@@ -1,0 +1,56 @@
+<!--pages/Parenting/Parenting.wxml-->
+<view class="box"> 
+<!--box  -->
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">医生列表</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">最新提问</view>
+</view>
+ 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px;overflow: scroll;" bindchange="bindChange">
+    <!-- 我是哈哈 -->
+    <swiper-item>
+   <view class="scroll-box" style="height:{{winHeight - 31}}px;overflow:scroll;">
+    <!--scroll  -->
+    <view class="doctor-list-box" wx:for="{{doctorlist}}" wx:key="*this"id="{{item.path}}" bindtap="jumpPages">
+    <!--doctor-list-box  -->
+    <image src="{{item.imgurl}}"></image>
+    <view class="doctor-list-right">
+    <view>{{item.title}}</view>
+    <view class="list-centent">{{item.content}}</view>
+     <view class="list-footer">
+    <text class="col-red">{{item.maxbaby}}<text class="fot-12">{{baby}}</text></text>
+    <text class="right-number">{{item.time}}</text>
+    </view>
+    </view>
+    <!--doctor-list-box  -->
+    </view>
+    <!--scroll  -->
+    </view>
+    </swiper-item>
+    <!-- 我是呵呵 -->
+    <swiper-item>
+    <view style="width:100%;height:{{winHeight}}px;overflow: scroll;"> 
+      <view class="list-nav-box">
+      <view class="list-nav {{item.isClick?'click':''}}" wx:for="{{navdata}}" wx:key="*this" bindtap='click' data-id='{{item.id}}'>{{item.name}}</view>
+      </view>
+       <!--  -->
+        <view class="list-centent-box" wx:for="{{listdata}}" wx:key="*this">
+     <view class="list-centent">
+     <text>{{item.name}}</text>
+     </view>
+     <view class="list-centent-footer">
+     <view class="list-fot-i"></view>
+     <text class="fot-main">{{item.time}}</text>
+     <text class="fot-right">{{item.can}}</text>
+     </view>
+     </view>
+
+   <view class="doctor-btn">关注该频道</view>
+   </view>
+    </swiper-item>
+     
+     
+     
+</swiper>
+<!--  -->
+</view>

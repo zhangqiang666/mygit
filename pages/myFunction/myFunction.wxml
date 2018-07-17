@@ -1,0 +1,50 @@
+<!--pages/myFunction/myFunction.wxml-->
+<view class="box">
+ <!--waike  -->
+<!--头部  -->
+<view class="myfunction-header">
+<!-- <image src="https://s6.postimg.cc/lwa4jyjk1/20180706498804.png" wx:if="{{avatarUrl==null}}"></image> -->
+  <!-- <image wx:else class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>  -->
+  <view class="open-img"> 
+  <open-data type="userAvatarUrl" class="avatar-name-open" style="  border-radius:50px;"></open-data>
+  </view>
+ <view class="avatar-name"> 
+ <view> 
+ <!-- <text wx:if="{{nickName==null}}">道特医疗</text> -->
+ <!-- <text wx:else>{{nickName}}</text> -->
+  <open-data type="userNickName" lang="zh_CN" style="font-size:14px;"></open-data>
+ </view>
+ <view>
+ <text class="fot-12">黄金会员</text>
+ </view>
+ </view>
+</view>
+<!--我的菜单列表  -->
+<view  class="mylist-box">
+<view class="list-centent" wx:for="{{listdata}}" id="{{item.path}}" bindtap='jumpPages'>
+<view class="list-img">
+<image src="{{item.url}}"></image>
+ <text wx:if="{{item.number==undefined}}"></text>
+<text wx:else class="number-i">{{item.number}}</text>
+</view>
+<view class="list-name"><text>{{item.name}}</text></view>
+</view>
+</view>
+<!--课程推荐  -->
+<view class="kecheng-header">
+<text>---  课程推荐   ---</text>
+</view>
+<view class="list-video-box">
+ 
+<view class="list-video"wx:for="{{videodata}}"wx:key="*this"id="{{item.path}}" bindtap="jumpPages">
+<image src="{{item.url}}"></image>
+<view class="video-title">{{item.name}}</view>
+<view class="video-man">{{item.man}}</view>
+</view>
+ 
+
+</view>
+
+ 
+ <!--waike  -->
+</view>

@@ -1,0 +1,124 @@
+/* pages/myFunction/myFunction.wxss */
+ 
+.box{
+  width:100%;
+  margin:0 auto;
+}
+.myfunction-header{
+  width:95%;
+  height:100px;
+  margin:0 auto;
+}
+.myfunction-header image{
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  margin-top:25px;
+  margin-left:2%;
+  float:left;
+ 
+}
+.open-img{
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  margin-top:25px;
+  margin-left:2%;
+  float:left;
+  overflow: hidden;
+}
+.avatar-name-open{
+  width:50px;
+  height:50px;
+}
+.avatar-name{
+  width:50%;
+  height:70px;
+  float:left;
+  line-height: 35px;
+  font-size: 16px;
+  margin-left:5%;
+  margin-top:20px;
+}
+.fot-12{
+  font-size: 12px;
+}
+.mylist-box{
+  width:100%;
+  height:150px;
+  border-bottom: 10px solid #F6F6F9;
+}
+.list-centent{
+  width:25%;
+  height:70px;
+  float:left;
+  text-align:center;
+}
+.list-img image{
+  width:25px;
+  height:25px;
+   margin-bottom:5px;
+   
+}
+.list-name{
+  font-size:10px;
+}
+.kecheng-header{
+  width:100%;
+  height:40px;
+  line-height: 40px;
+  text-align:center;
+  font-size: 12px;
+  color:#ccc;
+}
+/* .list-video-box image{
+width:48%;
+height:150px;
+float:left;
+ margin-left:2%;
+ margin-top:10px;
+} */
+.number-i{
+  width:15px;
+  height:15px;
+  display: inline-block;
+  float:right;
+  border:2px solid #ff66aa;
+  font-size: 10px;
+  position:absolute;
+   border-radius: 50px;
+   margin-left:-2%;
+  color:#ff66aa;
+  background: white;
+  text-align: center;
+  line-height: 15px;
+}
+.list-video-box{
+  width:95%;
+  margin:0 auto;
+  
+}
+.list-video{
+width:48%;
+height:150px;
+float:left;
+ margin-left:2%;
+ margin-top:10px;
+}
+.list-video image{
+  width:100%;
+  height:100px;
+  border-radius: 5px;
+}
+.video-title{
+  width:100%;
+  line-height: 25px;
+  font-size: 14px;
+  color:#000000;
+}
+.video-man{
+  width:100%;
+  line-height: 25px;
+  font-size: 12px;
+  color:#777777;
+}

@@ -1,0 +1,10 @@
+<!--pages/address/address.wxml-->
+<view class="box">
+<!--box  -->
+<view class="name-centent">单某   130****0215</view>
+<view class="adress-centent">
+ 上海徐汇区虹桥路慧谷创业园6楼606
+</view>
+<view class="doctor-btn" id="newaddress" bindtap='jumpPages'>新增地址</view>
+<!--box  -->
+</view>

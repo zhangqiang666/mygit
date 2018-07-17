@@ -1,0 +1,13 @@
+<!--pages/ssdoctor/ssdoctor.wxml-->
+<view class="box">
+<!--box  -->
+<view class="ssys-header">
+居家视频门诊服务介绍
+</view>
+<view class="ssys-centent">
+ 你是不是遇到过这样的情况，携家带口不远千里来看专家门诊，专家2分钟就把你打发了：
+ “不需要手术"、“药店买些药就行了”
+</view>
+<view class="doctor-btn">联系客服</view>
+<!--box  --> 
+</view>

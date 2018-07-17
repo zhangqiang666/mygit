@@ -1,0 +1,22 @@
+<!--pages/tuwen/tuwen.wxml-->
+ 
+ <view class="box">
+ <!--box  -->
+ <view class="tuwen-header">
+ <text class="tw-left">共<text class="col-red">2</text>篇</text>
+ <text class="tw-right">编辑</text>
+ </view>
+ <!--育儿知识大全列表  -->
+<view class="son-list" wx:for="{{listdata}}" wx:key="*this"id="{{item.path}}" bindtap='jumpPages'>
+<view class="son-list-left">
+<view class="nav-list-left-content"> 
+<text>{{item.content}}</text>
+</view>
+<view class="nav-list-left-footer">
+<text>{{item.babay}}</text>  <text style="margin-left:5px;">{{item.time}}</text>
+</view>
+</view>
+<image src="{{item.imgurl}}"></image>
+</view>
+ <!--box  -->
+ </view>

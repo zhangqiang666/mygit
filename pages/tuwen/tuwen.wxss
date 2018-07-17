@@ -1,0 +1,74 @@
+/* pages/tuwen/tuwen.wxss */
+.box{
+  width:95%;
+  margin:0 auto;
+}
+.tuwen-header{
+  width:100%;
+  height:50px;
+  line-height:50px;
+  font-size: 12px;
+    border-bottom: 1rpx solid #DBD8D8;
+}
+.tw-left{
+  float: left;
+}
+.tw-right{
+  float: right;
+}
+.col-red{
+  color:#ff66cc;
+}
+.son-header{
+  width:100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top:20px;
+}
+.son-header text{
+  font-size: 16px;
+  margin-left:2%;
+}
+.son-header image{
+  width:30px;
+  height:30px;
+  float:right;
+  margin-top:5px;
+  margin-right:2%;
+
+  margin-top:5px;
+  margin-right:2%;
+}
+.son-list{
+  width:100%;
+  height:100px;
+  margin-top:20px;
+  padding-bottom: 10px;
+ border-bottom: 1rpx solid #DBD8D8;
+}
+.son-list-left{
+  width:60%;
+  height:100px;
+  float:left;
+}
+.nav-list-left-content{
+  width:100%;
+  height:80px;
+  line-height: 40px;
+  font-size: 16px;
+  font-family: "微软雅黑";
+  padding:0 5px 0 5px;
+}
+.nav-list-left-footer{
+  width:100%;
+  height:20px;
+  font-size: 10px;
+  color:#ccc;
+  padding-left:2%;
+}
+.son-list image{
+  width:35%;
+  height:100px;
+  border-radius: 5px;
+  float:right;
+}

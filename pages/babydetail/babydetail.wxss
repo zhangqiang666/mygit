@@ -1,0 +1,91 @@
+/* pages/babydetail/babydetail.wxss */
+.box{
+  width:95%;
+  margin:0 auto;
+}
+.baby-detail-head{
+  width:100%;
+  height:160px;
+  position: relative;
+}
+.banner-head{
+  width:96%;
+  height:160px;
+  margin-left:2%;
+  position: absolute;
+}
+.controls{
+  width:100%;
+  height:160px;
+}
+/**index.wxss**/
+.swiper-tab{
+	width: 100%;
+	/* border-bottom: 2rpx solid #777777; */
+	text-align: center;
+	line-height: 80rpx;}
+.swiper-tab-list{  font-size: 30rpx;
+    display: inline-block;
+	width:50%;
+	color: #8C8C8C;
+}
+.on{
+  color: #000000;
+	border-bottom: 5rpx solid #000000;}
+ 
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+	/* text-align: center; */
+}
+.tab-left{
+  width:70%;
+  float: left;
+}
+.tab-right{
+width:30%;
+float: left;
+line-height: 80rpx;
+font-size: 14px;
+text-align:right;
+}
+.tab-right image{
+  width:25px;
+  height:21px;
+  margin-top:10px;
+  margin-right:4%;
+}
+.babydetail-title{
+  width:100%;
+  height:50px;
+  line-height: 50px;
+  font-size: 16px;
+  color:#000000;
+  margin-top:20px;
+}
+.babydetail-centent{
+  width:100%;
+  font-size:14px;
+  color:#8C8C8C;
+  line-height: 30px;
+}
+.doctor-btn{
+  width:90%;
+  height:48px;
+  margin:0 auto;
+  line-height: 48px;
+  text-align:center;
+  color:white;
+  font-size: 16px;
+  border-radius: 30px;
+  background:#FF66AA;
+   position:absolute;
+   bottom:20px;
+   margin-left:5%;
+}
+.man-img{
+  width:30px;
+  height:30px;
+  border-radius: 50px;
+  margin-top:13px;
+  float:left;
+}

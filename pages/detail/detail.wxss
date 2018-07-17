@@ -1,0 +1,29 @@
+/* pages/detail/detail.wxss */
+.box{
+  width:95%;
+  margin:0 auto;
+}
+.detail-title{
+  width:100%;
+  line-height: 30px;
+  font-size: 16px;
+  color:#000000;
+}
+.detail-i{
+  width:100%;
+  line-height: 50px;
+  color:#939393;
+  font-size: 10px;
+}
+.detail-img{
+  width:100%;
+  height:120px;
+}
+.detail-centent{
+  width:95%;
+  margin:0 auto;
+  font-size: 14px;
+  line-height: 28px;
+  color:#000000;
+   
+}

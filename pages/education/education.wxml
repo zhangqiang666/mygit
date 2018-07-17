@@ -1,0 +1,59 @@
+<!--pages/babydetail/babydetail.wxml-->
+<view class="box">
+<!--  -->
+<view class="baby-detail-head">
+<!-- <image src="https://s6.postimg.cc/srr5bdyap/weibaioqing.png" class="banner-head"></image> -->
+<view class="section tc">
+  <video id="myVideo"  src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="true"></video>
+  <cover-view class="controls" bindtap='bindplay' style="display:{{tab_image}}" >
+<cover-image class="img"  src="../images/delete/video01.png" />
+</cover-view>  
+</view>
+
+
+
+
+
+
+</view>
+<!--  -->
+<view class="tab-left"> 
+<view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">服务介绍</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">产品介绍</view>
+    
+</view>
+<!--  -->
+</view>
+<view class="tab-right">
+<image src="https://s6.postimg.cc/r6bvjm635/QQ_20180711144010.png"></image>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <!-- 我是哈哈 -->
+    <swiper-item>
+      <view class="scroll-box">
+      <view class="babydetail-title">
+      益智产品助力宝宝智力开发
+      </view>
+      <view class="babydetail-centent"> <text> 通过该益智产品与宝宝进行面对面交流互动，宝宝在出生没多久还不会说话的时候，他们就只能用表情和哭声来传递信息，如果他们的表情和哭声妈妈没有正确理解，那就只有干瞪眼了。但是宝宝是妈妈的心头肉，一颦一笑看在眼里记在心里，所以就算别人不懂，但作为妈妈时间久了就会作出正确的理解并作出正确的动作。可以说这是宝宝和妈妈的“摩斯密码”。
+      一．吮吸的动作 宝宝天生有喝母乳的能力，喝奶的时候嘴会做出吮吸的动作。如果妈妈发现宝宝的脸总是左右摆动，嘴巴做出吮吸的动作，而小手随意摆动，像想要抓取什么东西，就可能是宝宝在寻找食物。这时候如果妈妈把手指放在宝宝的手上，宝宝就会立刻抓住。那么
+      </text>
+      </view>
+      <view class="doctor-btn">参与报名</view>
+      <!--scroll  -->
+      </view>
+    </swiper-item>
+    <!-- 我是呵呵 -->
+    <swiper-item>
+      <view class="scroll-box">
+      <view class="project-img">
+      <image src="https://s6.postimg.cc/ksmsgce1t/QQ_20180711143112.png"></image>
+      </view>
+      <view class="doctor-btn">参与报名</view>
+      <!--scroll  -->
+      </view>
+    </swiper-item>
+    
+</swiper>
+<!-- box -->
+</view>

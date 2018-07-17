@@ -1,0 +1,49 @@
+<!--pages/newaddress/newaddress.wxml-->
+<view class="box">
+<!--box  -->
+<view class="box-left">
+<view class="left-i">姓名</view>
+<view class="left-i">联系方式</view>
+<view class="left-i">所在地区</view>
+<view class="left-i">市</view>
+<view class="left-i">区/县</view>
+<view class="left-i">详细地址</view>
+<view class="left-i">用户标签</view>
+</view>
+
+<view class="box-right">
+<view class="right-centent"><input placeholder="输入名字" focus="{{focus}}" /></view>
+<view class="right-centent"><input placeholder="手机号码" focus="{{focus}}" /></view>
+<view class="right-centent">
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <view class="picker">
+         {{region[0]}}
+      </view>
+    </picker>
+</view>
+<view class="right-centent">
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <view class="picker">
+         {{region[1]}} 
+      </view>
+    </picker>
+</view>
+<view class="right-centent">
+<picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+      <view class="picker">
+        {{region[2]}}
+      </view>
+    </picker>
+</view>
+<view class="right-centent"><input placeholder="需填写楼栋层或房间号信息" focus="{{focus}}" /></view>
+<view class="right-centent">
+<view class="icon-i">父母</view>
+<view class="icon-i">姐姐</view>
+<view class="icon-i">+</view>
+</view>
+
+</view>
+
+<view class="doctor-btn">确认提交</view>
+<!--box  -->
+</view>

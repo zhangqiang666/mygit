@@ -1,0 +1,111 @@
+/* pages/addbaby/addbaby.wxss */
+.box{
+  width:95%;
+  margin:0 auto;
+}
+.addbaby-left{
+width:70%;
+height:100px;
+float: left;
+}
+.addbaby-left-list{
+  width:100%;
+  height:50px;
+  line-height: 50px;
+}
+.addbaby-left-list text{
+  font-size: 12px;
+  float:left;
+  margin-right:5%;
+}
+.addbaby-left-list input{
+  height:50px;
+  line-height: 50px;
+  font-size: 12px;
+  float: left;
+  
+ 
+}
+.picker{
+  float: left;
+  font-size: 12px;
+}
+.addbaby-right{
+  width:30%;
+  height:100px;
+  float:left;
+}
+.baby-img{
+  width:70px;
+  height:70px;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 12px;
+  overflow: hidden;
+}
+.avatar-name-open{
+ width:70px;
+  height:70px;
+
+}
+.radio{
+  font-size: 12px;
+  color:#ccc;
+  margin-left:5%;
+ 
+}
+.radio-i{
+  
+}
+/* radio未选中时样式 */
+
+radio .wx-radio-input{
+
+border-radius:50px;
+
+height: 26rpx;
+
+width: 26rpx;
+
+ margin-top: -4rpx; 
+
+/* 自定义样式.... */
+
+}
+
+ 
+
+/* radio选中时样式 */
+
+radio .wx-radio-input.wx-radio-input-checked::before{
+border-radius:50px;
+
+ margin-top: -2rpx; 
+background-color: #ff66cc;
+
+border: 1rpx solid #ff66cc;
+
+/* 自定义样式.... */
+
+}
+.doctor-btn{
+  width:90%;
+  height:40px;
+  margin:0 auto;
+  line-height: 40px;
+  text-align:center;
+  color:white;
+  font-size: 14px;
+  border-radius: 50px;
+  background:#ff66cc;
+  /* margin-top:300px; */
+  position: absolute;
+  bottom: 20px;
+  margin-left:2.5%;
+}
+.birday-right{
+  float:left;
+  width:60%;
+  height:50px;
+}

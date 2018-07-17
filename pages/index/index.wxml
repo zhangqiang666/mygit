@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<view class="index-box"> 
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="width:95%;height:100px;margin:0 auto;">
+    <block wx:for="{{imgUrls}}"wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+<!-- <view class="box">
+<image class="img" src="https://s6.postimg.cc/wule2bfwx/20180706537485.png"></image>
+</view> -->
+<view class="nav-box">
+<image class="nav-left" src="../images/word/yssm.png"id="doctor" bindtap='jumpPages'></image>
+<image class="nav-right" src="../images/word/ysdq.png"id="doctorall" bindtap='jumpPages'></image>
+</view>
+<!--随身医生列表  -->
+<view class="nav-list-box"> 
+<view class="nav-list" wx:for="{{navdata}}" wx:key="*this"id="{{item.path}}" bindtap='jumpPages'>
+<view>
+<image src="{{item.url}}"></image>
+</view>
+<view>
+<text>{{item.name}}</text>
+</view>
+</view>
+</view>
+<!--育儿知识大全头部  -->
+<view class="son-header"id="Parenting" bindtap='jumpPages'>
+<text>育儿知识大全</text>
+<image src="https://s6.postimg.cc/szhzzo4g1/20180706298211.png"></image>
+</view>
+<!--育儿知识大全列表  -->
+<view class="son-list" wx:for="{{listdata}}" wx:key="*this"id="{{item.path}}" bindtap='jumpPages'>
+<view class="son-list-left">
+<view class="nav-list-left-content"> 
+<text>{{item.content}}</text>
+</view>
+<view class="nav-list-left-footer">
+<text>{{item.babay}}</text>  <text style="margin-left:5px;">{{item.time}}</text>
+</view>
+</view>
+<image src="{{item.imgurl}}"></image>
+</view>
+
+
+<!--index-box  -->
+</view>

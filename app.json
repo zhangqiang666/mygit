@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myFunction/myFunction",
+    "pages/cardBag/cardBag",
+    "pages/Parenting/Parenting",
+    "pages/detail/detail",
+    "pages/doctor/doctor",
+    "pages/doctordetail/doctordetail",
+    "pages/address/address",
+    "pages/mybaby/mybaby",
+    "pages/myclass/myclass",
+    "pages/tuwen/tuwen",
+    "pages/ssdoctor/ssdoctor",
+    "pages/spmz/spmz",
+    "pages/greendoctor/greendoctor",
+    "pages/newaddress/newaddress",
+    "pages/doctorall/doctorall",
+    "pages/addbaby/addbaby",
+    "pages/babydetail/babydetail",
+    "pages/education/education",
+    "pages/mynews/mynews",
+    "pages/service/service"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTitleText": "小儿服务号",
+    "backgroundColor": "#eeeeee",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "",
+        "iconPath": "pages/images/home1@2x.png",
+        "selectedIconPath": "pages/images/home2@2x.png"
+      },
+      {
+        "pagePath": "pages/cardBag/cardBag",
+        "text": "",
+        "iconPath": "pages/images/cardbag2@2x.png",
+        "selectedIconPath": "pages/images/cardbag1@2x.png"
+      },
+      {
+        "pagePath": "pages/myFunction/myFunction",
+        "text": "",
+        "iconPath": "pages/images/mine2@2x.png",
+        "selectedIconPath": "pages/images/mine1@2x.png"
+      }
+    ],
+    "color": "#000",
+    "selectedColor": "#1296db"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
