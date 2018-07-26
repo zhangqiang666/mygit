@@ -1,4 +1,5 @@
 // pages/Parenting/Parenting.js
+
 Page({
 
   /**
@@ -59,15 +60,15 @@ Page({
     
     }],
     doctorlist: [{
-      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '私人医生半年套餐', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
+      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '王大锤', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
     }, {
-      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '私人医生半年套餐', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
+      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '王大锤', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
     }, {
-      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '私人医生半年套餐', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
+      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '王大锤', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
     }, {
-      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '私人医生半年套餐', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
+      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '王大锤', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
     }, {
-      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '私人医生半年套餐', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
+      content: '3次上门咨询/一周答疑/1次发育评测/产后开奶/母乳指导/科学奶 ', title: '王大锤', imgurl: '../images/touxiang.png', babay: '00', maxbaby: '￥1500.', time: '已230135位预约', path: 'doctordetail'
     }],
   },
    

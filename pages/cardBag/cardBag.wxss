@@ -47,8 +47,14 @@
 	color: #777777;
 }
 .on{ color: #ff99ff;
-	border-bottom: 5rpx solid #ff99ff;}
- 
+	/* border-bottom: 5rpx solid #ff99ff; */
+  }
+ .xiahua{
+   width:20%;
+   height:2px;
+   background:#ff99ff; 
+   margin:0 auto;
+ }
 .swiper-box{ display: block;
  height: 100%;
   width: 100%; 

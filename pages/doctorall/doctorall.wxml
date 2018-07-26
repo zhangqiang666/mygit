@@ -2,8 +2,8 @@
 <view class="box"> 
 <!--box  -->
 <view class="swiper-tab">
-    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">医生列表</view>
-    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">最新提问</view>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">医生列表<view class="{{currentTab==0 ? 'xiahua' : ''}}"></view></view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">最新提问<view class="{{currentTab==1 ? 'xiahua' : ''}}"></view></view>
 </view>
  
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px;overflow: scroll;" bindchange="bindChange">
@@ -15,11 +15,16 @@
     <!--doctor-list-box  -->
     <image src="{{item.imgurl}}"></image>
     <view class="doctor-list-right">
-    <view>{{item.title}}</view>
-    <view class="list-centent">{{item.content}}</view>
+    <view><text class="doctor-title-left">{{item.title}}</text><text class="doctor-title-center">副主任医师</text><text class="doctor-title-right">已回答2341次</text></view>
+    <view class="list-centent">
+    <view>上海新华医院<text>  新生儿科</text></view>
+    <view>擅长新生儿消化系统疾病 如胃食管反流等</view>
+    </view>
      <view class="list-footer">
-    <text class="col-red">{{item.maxbaby}}<text class="fot-12">{{baby}}</text></text>
-    <text class="right-number">{{item.time}}</text>
+     <view class="doctor-list-btn">向TA咨询</view>
+     <view class="doctor-list-btn">要TA上门</view>
+     <view class="doctor-list-btn">医院看TA</view>
+     
     </view>
     </view>
     <!--doctor-list-box  -->
@@ -46,6 +51,7 @@
      </view>
 
    <view class="doctor-btn">关注该频道</view>
+   
    </view>
     </swiper-item>
      
