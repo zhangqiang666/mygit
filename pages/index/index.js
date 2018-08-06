@@ -26,7 +26,7 @@ Page({
     },{
         name: '就医通道', url: '../images/word/jytd.png',path:'greendoctor'
     },{
-        name: '益智教育', url: '../images/word/yzjy.png',path:'education'
+        name: '育儿课堂', url: '../images/word/yzjy.png',path:'education'
     }],
     listdata:[{
       content: '孩子的饮食很重要，除了食物选择还要注意这个', imgurl:'https://s6.postimg.cc/vi3p08va9/QQ_20180706113134.png',babay:'pcbaby首页',time:'55分钟前',path:'detail'

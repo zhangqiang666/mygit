@@ -8,6 +8,6 @@
 为你提供真实的医生，把名医揣在，宝宝的情况  可以随时咨询微信医生
  点击预约预约医生添加官方客服进行在线预约。
 </view>
-<view class="doctor-btn">预约医生</view>
+<view class="doctor-btn" id="chat" bindtap='jumpPages'>预约医生</view>
 <!--box  --> 
 </view>

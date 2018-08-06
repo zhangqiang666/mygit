@@ -7,7 +7,19 @@ Page({
   data: {
   
   },
+  jumpPages: function (e) {
+    let path = e.currentTarget.id;
+    console.log(path)
+    //let pathcopy = e.currentTarget.dataset.identity;
+    // console.log(e)
+    var value = wx.getStorageSync('userInfo')
+    //console.log(value)
+    wx.navigateTo({
+      url: "../" + path + "/" + path + "",
+    })
 
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */

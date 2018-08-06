@@ -28,21 +28,21 @@ Page({
     }],
 
     navdata:[{
-      name: '全部', isClick:'false',id:'0'
+      name: '全部', isClick:true,id:'0'
     },{
-        name: '母乳喂养', isClick: '',id:'1'
+        name: '母乳喂养', isClick: false,id:'1'
       }, {
-        name: '语言发育', isClick: '', id: '2'
+        name: '语言发育', isClick: false, id: '2'
     }, {
-        name: '家庭早教', isClick: '',id:'3'
+        name: '家庭早教', isClick: false,id:'3'
       }, {
-        name: '儿科口腔', isClick: '', id: '4'
+        name: '儿科口腔', isClick: false, id: '4'
     }, {
-        name: '皮肤护理', isClick: '', id: '5'
+        name: '皮肤护理', isClick: false, id: '5'
       }, {
-        name: '隔代育儿', isClick: '', id: '6'
+        name: '隔代育儿', isClick: false, id: '6'
     }, {
-        name: '性格发育', isClick: '', id: '7'
+        name: '性格发育', isClick: false, id: '7'
     }],
     listdata: [{
       name: '近2岁后，宝宝进入叛逆期，什么事情都跟家长反着来，不肯好好吃饭，不愿乖乖睡觉，面对2岁的小魔鬼，父母该怎么办好呢？', time: '发起了提问（男宝2018-10-20）', can: '2000次阅读'
@@ -82,26 +82,27 @@ Page({
    // this.data.navdata.push(isclick)
      var navdata=[];
     
-    this.data.navdata.forEach((a,i)=>{
-     var obj={
-       name:a.name,
-       isClick:"",
-       id:i
-
-     }
-     navdata.push(obj)
-     console.log(navdata)
+     this.data.navdata.forEach((a,i)=>{
+    //  var obj={
+    //    name:a.name,
+    //    isClick:false,
+    //    id:i
+    //  }
+    //  navdata.push(obj)
+      console.log(this.data.navdata)
      that.setData({
-       navdata: navdata
+       navdata: this.data.navdata
      });
-      
+      this.data.navdata[i].isClick =false
+       this.data.navdata[this.data.navdata.length-1].isClick = false
     if(i==index){
-      obj.isClick="false"
+      this.data.navdata[i].isClick=true
       that.setData({
-        navdata: navdata
+        navdata: this.data.navdata
       });
     }
     })
+  
     
     
   },

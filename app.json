@@ -21,7 +21,8 @@
     "pages/babydetail/babydetail",
     "pages/education/education",
     "pages/mynews/mynews",
-    "pages/service/service"
+    "pages/service/service",
+    "pages/chat/chat"
   ],
   "window": {
     "backgroundTextStyle": "light",
