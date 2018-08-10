@@ -1,19 +1,21 @@
 /* pages/Parenting/Parenting.wxss */
 .box{
-  width:95%;
+  width:100%;
   margin:0 auto;
 }
 .swiper-tab{
 	width: 100%;
-border-bottom: 1rpx solid #DBD8D8;
+border-bottom: 1rpx solid RGBA(235, 235, 235, 1);
 	text-align: center;
-	line-height: 80rpx;}
-.swiper-tab-list{  font-size: 12px;
+	line-height: 110rpx;}
+.swiper-tab-list{ 
+   font-size: 14px;
     display: inline-block;
 	width: 20%;
 	color: #777777;
 }
 .on{ color: #ff99ff;
+font-size: 16px;
 	/* border-bottom: 5rpx solid #ff99ff; */
 
   }
@@ -48,11 +50,12 @@ border-bottom: 1rpx solid #DBD8D8;
   margin-right:2%;
 }
 .son-list{
-  width:100%;
+  width:95%;
   height:100px;
+  margin:0 auto;
   margin-top:20px;
   padding-bottom: 10px;
-  border-bottom: 1rpx solid #DBD8D8;
+  border-bottom: 1rpx solid RGBA(235, 235, 235, 1);
 }
 .son-list-left{
   width:60%;

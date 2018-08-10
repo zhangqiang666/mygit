@@ -5,8 +5,14 @@
 <!--  -->
 <view class="tab-left"> 
 <view class="swiper-tab">
-    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">订单消息（6）</view>
-    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">课程消息（2）</view>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+    订单消息（6）
+       <view class="{{currentTab==0 ? 'xiahua' : ''}}"></view>
+    </view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+    课程消息（2）
+       <view class="{{currentTab==1 ? 'xiahua' : ''}}"></view>
+    </view>
     
 </view>
 <!--  -->

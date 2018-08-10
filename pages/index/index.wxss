@@ -95,11 +95,10 @@
 }
 .son-header{
   width:95%;
-  height: 40px;
+  height: 70px;
     margin:0 auto;
-  line-height: 40px;
-  margin-top:20px;
-    border-bottom: 1rpx solid #EBEBEB;
+  line-height: 70px;
+ border-bottom: 1rpx solid #EBEBEB;
 }
 .son-header text{
   font-size: 16px;
@@ -109,7 +108,7 @@
   width:30px;
   height:30px;
   float:right;
-  margin-top:5px;
+  margin-top:20px;
   margin-right:2%;
  
 }

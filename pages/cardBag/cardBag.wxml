@@ -2,11 +2,14 @@
 <view class="box">
  <!--waike  -->
  <view class="section">
- <image src="../images/word/sousuo.png"></image>
+ <!-- <image src="../images/word/sousuo.png"></image> -->
+    <block wx:for="{{iconType}}">
+    <icon type="{{item}}" size="15"/>
+  </block>
     <input placeholder="宝宝智力开发" focus="{{focus}}" />
 </view>
 <!--轮播  -->
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:100px;">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="width:95%;margin:0 auto;height:100px;">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
         <image src="{{item}}" class="slide-image" />
@@ -15,21 +18,39 @@
   </swiper>
   <!--选项卡  -->
   <view class="swiper-tab">
-    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
-     智慧服务
-    <view class="{{currentTab==0 ? 'xiahua' : ''}}"></view>
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+     育宝课堂 
+   <view class="{{currentTab==0 ? 'xiahua' : ''}}"></view>
     </view>
     <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
-     宝宝医疗 
-   <view class="{{currentTab==1 ? 'xiahua' : ''}}"></view>
+     智慧服务
+    <view class="{{currentTab==1 ? 'xiahua' : ''}}"></view>
     </view>
     <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
-     育宝课堂 
+     宝宝医疗 
    <view class="{{currentTab==2 ? 'xiahua' : ''}}"></view>
     </view>
+    <!-- <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+     育宝课堂 
+   <view class="{{currentTab==2 ? 'xiahua' : ''}}"></view>
+    </view> -->
 </view>
  
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+ <!-- 我是嘿嘿 -->
+    <swiper-item>
+      <view class="list-video-box">
+<!-- <image wx:for="{{videodata}}" src="{{item.url}}"id="{{item.path}}" bindtap='jumpPages'></image> -->
+<view class="list-video"wx:for="{{videodata}}"wx:key="*this"id="{{item.path}}" bindtap="jumpPages">
+<image src="{{item.url}}"></image>
+<view class="video-title">{{item.name}}</view>
+<view class="video-man">{{item.man}}</view>
+</view>
+
+
+
+</view>
+    </swiper-item>
     <!-- 我是哈哈 -->
     <swiper-item>
       <view class="list-zhfw" wx:for="{{smartdata}}" wx:key="*this">
@@ -44,20 +65,7 @@
       
       </view>
     </swiper-item>
-    <!-- 我是嘿嘿 -->
-    <swiper-item>
-      <view class="list-video-box">
-<!-- <image wx:for="{{videodata}}" src="{{item.url}}"id="{{item.path}}" bindtap='jumpPages'></image> -->
-<view class="list-video"wx:for="{{videodata}}"wx:key="*this"id="{{item.path}}" bindtap="jumpPages">
-<image src="{{item.url}}"></image>
-<view class="video-title">{{item.name}}</view>
-<view class="video-man">{{item.man}}</view>
-</view>
-
-
-
-</view>
-    </swiper-item>
+    
 </swiper>
 
  <!--waike  -->

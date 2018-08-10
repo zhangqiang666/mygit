@@ -5,6 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
+    iconType: [
+      'search'
+    ],
     imgUrls: [
       '../images/word/banner01.png',
       '../images/word/banner01.png',
@@ -87,6 +90,7 @@ Page({
    */
   onLoad: function (options) {
     var that = this;
+    console.log(options)
 
     /**
      * 获取系统信息

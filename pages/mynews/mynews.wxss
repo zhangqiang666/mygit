@@ -1,7 +1,14 @@
 /* pages/education/education.wxss */
 /* pages/babydetail/babydetail.wxss */
+page{
+
+background-color:RGBA(248, 248, 248, 1);
+
+height:100%;
+
+}
 .box{
-  width:95%;
+  width:100%;
   margin:0 auto;
 }
 /**index.wxss**/
@@ -9,7 +16,10 @@
 	width: 100%;
 	 border-bottom: 1rpx solid #DBD8D8; 
 	text-align: center;
-	line-height: 80rpx;}
+  height:110rpx;
+	line-height: 105rpx;
+  background: white;
+  }
 .swiper-tab-list{  font-size: 30rpx;
     display: inline-block;
 	width:50%;
@@ -18,8 +28,15 @@
 }
 .on{
   color: #000000;
-	border-bottom: 5rpx solid #000000;}
- 
+  font-size: 16px;
+	/* border-bottom: 5rpx solid #000000; */
+  }
+ .xiahua{
+   width:20%;
+   height:2px;
+   background:#000000; 
+   margin:0 auto;
+ }
 .swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
 .swiper-box view{
 	/* text-align: center; */
@@ -31,16 +48,21 @@
 .tab-right{
 width:30%;
 float: left;
-line-height: 86rpx;
+height:110rpx;
+line-height: 110rpx;
 font-size: 14px;
 color:#8C8C8C;
 text-align:left;
 border-bottom: 1rpx solid #DBD8D8; 
+background: white;
 }
 .list-box{
-  width:100%;
+  width:95%;
   height:150px;
- border-bottom: 1rpx solid #DBD8D8;
+  margin:0 auto;
+ /* border-bottom: 1rpx solid #DBD8D8; */
+ background: white;
+ margin-top:20px;
 }
 .list-head{
   width:100%;
@@ -73,6 +95,8 @@ border-bottom: 1rpx solid #DBD8D8;
    margin-left:4%;
   font-size: 12px;
   color:#8C8C8C;
+  background:RGBA(248, 248, 248, 1);
+  padding:5px 2%;
 }
 .list-footer{
   width:100%;
@@ -93,9 +117,12 @@ border-bottom: 1rpx solid #DBD8D8;
   font-family: "微软雅黑"
 }
 .money-book-box{
-  width:100%;
+  width:95%;
   height:150px;
- border-bottom: 1rpx solid #DBD8D8;
+  margin:0 auto;
+  background: white;
+  margin-top:20px;
+ /* border-bottom: 1rpx solid #DBD8D8; */
 }
 .book-title{
   width:100%;
@@ -103,6 +130,7 @@ border-bottom: 1rpx solid #DBD8D8;
   line-height: 50px;
   font-size: 14px;
   color:#000000;
+  padding-left:5%;
 }
 .book-centent{
   width:100%;
@@ -110,10 +138,11 @@ border-bottom: 1rpx solid #DBD8D8;
   line-height: 50px;
   font-size: 14px;
   color:#8C8C8C;
+  padding-left:5%;
 
 }
 .book-btn{
-  width:100px;
+  width:120px;
   height:35px;
   line-height: 35px;
   text-align: center;

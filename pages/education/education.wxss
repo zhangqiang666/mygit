@@ -1,7 +1,7 @@
 /* pages/education/education.wxss */
 /* pages/babydetail/babydetail.wxss */
 .box{
-  width:95%;
+  width:100%;
   margin:0 auto;
 }
 .banner-head{
@@ -27,17 +27,28 @@
 /**index.wxss**/
 .swiper-tab{
 	width: 100%;
-	/* border-bottom: 2rpx solid #777777; */
+	border-bottom: 1rpx solid RGBA(219, 216, 216, 1);
 	text-align: center;
-	line-height: 80rpx;}
-.swiper-tab-list{  font-size: 30rpx;
+  height:100rpx;
+	line-height: 95rpx;
+   
+  }
+.swiper-tab-list{
+    font-size: 30rpx;
     display: inline-block;
 	width:50%;
 	color: #8C8C8C;
 }
 .on{
-  color: #000000;
-	border-bottom: 5rpx solid #000000;}
+  color: RGBA(0, 0, 0, 1);
+	/* border-bottom: 5rpx solid #000000; */
+  }
+   .xiahua{
+   width:20%;
+   height:2px;
+   background:RGBA(0, 0, 0, 1); 
+   margin:0 auto;
+ }
  
 .swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
 .swiper-box view{
@@ -50,28 +61,32 @@
 .tab-right{
 width:30%;
 float: left;
-line-height: 80rpx;
+height:100rpx;
+line-height: 100rpx;
 font-size: 14px;
 text-align:right;
+border-bottom: 1rpx solid RGBA(219, 216, 216, 1);
 }
 .tab-right image{
   width:25px;
   height:21px;
-  margin-top:10px;
-  margin-right:4%;
+  margin-top:15px;
+  margin-right:6%;
 }
 .babydetail-title{
-  width:100%;
+  width:95%;
   height:50px;
   line-height: 50px;
   font-size: 16px;
-  color:#000000;
+  color:RGBA(0, 0, 0, 1);
   margin-top:20px;
+  margin:0 auto;
 }
 .babydetail-centent{
-  width:100%;
+  width:95%;
   font-size:14px;
-  color:#8C8C8C;
+  color:RGBA(140, 140, 140, 1);
+  margin:0 auto;
   line-height: 30px;
 }
 .doctor-btn{
@@ -104,3 +119,4 @@ text-align:right;
   height:210px;
   margin-top:50px;
 }
+ 

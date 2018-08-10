@@ -1,14 +1,26 @@
 /* pages/mybaby/mybaby.wxss */
 /* pages/address/address.wxss */
+page{
+
+background-color:RGBA(248, 248, 248, 1);
+
+height:100%;
+
+}
 .box{
-  width:95%;
+  width:100%;
   margin:0 auto;
+  height:100%;
+  /* background:RGBA(248, 248, 248, 1); */
 }
 .baby-list-box{
-  width:100%;
+  width:95%;
   height:80px;
+  margin:0 auto;
   padding-top:20px;
-  border-bottom:1rpx solid #DBD8D8;
+  background: white;
+  margin-top:20px;
+  /* border-bottom:1rpx solid #DBD8D8; */
 }
 .baby-list-img{
   width:15%;
@@ -53,6 +65,6 @@
   background:#ff66cc;
    margin-top:100px; 
     position: absolute;
-    margin-left:2.5%;
+    margin-left:5%;
   bottom: 20px;  
 }

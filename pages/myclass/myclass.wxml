@@ -2,8 +2,14 @@
 <view class="box"> 
 <!--box  -->
 <view class="swiper-tab">
-    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">公开课（3）</view>
-    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">付费课</view>
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+    公开课（3）
+     <view class="{{currentTab==0 ? 'xiahua' : ''}}"></view>
+    </view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+    付费课
+     <view class="{{currentTab==1 ? 'xiahua' : ''}}"></view>
+    </view>
       
 </view>
  

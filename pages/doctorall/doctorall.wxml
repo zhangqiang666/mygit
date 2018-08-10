@@ -9,7 +9,7 @@
 <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight}}px;overflow: scroll;" bindchange="bindChange">
     <!-- 我是哈哈 -->
     <swiper-item>
-   <view class="scroll-box" style="height:{{winHeight - 31}}px;overflow:scroll;">
+   <view class="scroll-box" style="height:{{winHeight - 31}}px;overflow:scroll; background:rgb(246,246,249);">
     <!--scroll  -->
     <view class="doctor-list-box" wx:for="{{doctorlist}}" wx:key="*this"id="{{item.path}}" bindtap="jumpPages">
     <!--doctor-list-box  -->
@@ -49,7 +49,7 @@
      <text class="fot-right">{{item.can}}</text>
      </view>
      </view>
-
+     <view style="width:100%;height:50px;"></view>
    <view class="doctor-btn">关注该频道</view>
    
    </view>

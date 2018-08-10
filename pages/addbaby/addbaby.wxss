@@ -1,7 +1,18 @@
 /* pages/addbaby/addbaby.wxss */
+page{
+
+background-color:RGBA(248, 248, 248, 1);
+
+height:100%;
+
+}
 .box{
-  width:95%;
+  width:100%;
+  /* background: RGBA(248, 248, 248, 1); */
+  background: white;
+  padding:10px 5%;
   margin:0 auto;
+  margin-top:10px;
 }
 .addbaby-left{
 width:70%;
@@ -102,7 +113,7 @@ border: 1rpx solid #ff66cc;
   /* margin-top:300px; */
   position: absolute;
   bottom: 20px;
-  margin-left:2.5%;
+ 
 }
 .birday-right{
   float:left;

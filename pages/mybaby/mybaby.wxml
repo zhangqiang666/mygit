@@ -4,6 +4,7 @@
  <!-- <view class="baby-list" wx:for="{{babydata}}" wx:key="*this"id="addbaby" bindtap='jumpPages'>
  <image src="{{item.url}}"></image>
  </view> -->
+ <view style="width:100%;height:5px;background:RGBA(248, 248, 248, 1);"></view>
  <view class="baby-list-box" wx:for="{{babydata}}" wx:key="*this"id="addbaby" bindtap='jumpPages'>
  <image src="{{item.url}}" class="baby-list-img"></image>
  <image src="../images/word/man.png" class="baby-sex"></image>

@@ -10,9 +10,9 @@ Page({
     // tab切换
     currentTab: 0,
     listdata:[{
-      numbers:'服务单号：23819244',zhuangtai:'申请中',nameman:'预约人姓名：',name:'张强',phoneman:'预约人电话：',phone:'130****0101',sexman:'预约人性别：',sex:'男',problemman:'咨询的问题',problem:'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+      numbers: '服务单号：23819244', zhuangtai: '申请中', nameman: '预约人姓名：', name: '张强', phoneman: '预约人电话：', phone: '130****0101', sexman: '预约人性别：', sex: '男', problemman: '咨询的问题', problem:'我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁'
     },{
-        numbers: '服务单号：23819244', zhuangtai: '待视频连线', nameman: '预约人姓名：', name: '张强', phoneman: '预约人电话：', phone: '130****0101', sexman: '预约人性别：', sex: '男', problemman: '咨询的问题', problem: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        numbers: '服务单号：23819244', zhuangtai: '待视频连线', nameman: '预约人姓名：', name: '张强', phoneman: '预约人电话：', phone: '130****0101', sexman: '预约人性别：', sex: '男', problemman: '咨询的问题', problem: '我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁我是谁'
     }]
   },
 

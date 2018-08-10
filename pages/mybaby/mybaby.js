@@ -1,10 +1,11 @@
 // pages/mybaby/mybaby.js
 Page({
-
+  
   /**
    * 页面的初始数据
    */
   data: {
+    
   babydata:[{
     url: '../images/touxiang.png', title:'Daniels',time:'2018-01-02'
   },{

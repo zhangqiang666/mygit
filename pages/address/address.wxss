@@ -1,6 +1,13 @@
 /* pages/address/address.wxss */
+page{
+
+background-color:RGBA(248, 248, 248, 1);
+
+height:100%;
+
+}
 .box{
-  width:95%;
+  width:100%;
   margin:0 auto;
 }
 .name-centent{
@@ -9,15 +16,26 @@
   line-height: 30px;
   font-size: 14px;
   font-family: "黑体";
-  margin-top:20px;
+  margin-top:10px;
+  padding:10px 5% 0 5%;
+  background: white;
 
+}
+.name-centent image{
+  width:16px;
+  height:16px;
+  float:right;
+  margin-right:10%;
+  margin-top:10px;
 }
 .adress-centent{
   width:100%;
   height:30px;
   line-height: 30px;
+   padding:0 5% 10px 5%;
   color:#ccc;
   font-size: 14px;
+  background: white;
 }
 .doctor-btn{
   width:90%;
@@ -32,4 +50,5 @@
   /* margin-top:400px; */
   position: absolute;
   bottom: 20px;
+  margin-left:5%;
 }

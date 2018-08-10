@@ -1,4 +1,11 @@
 /* pages/newaddress/newaddress.wxss */
+/* page{
+
+background-color:RGBA(248, 248, 248, 1);
+
+height:100%;
+
+} */
 .box{
   width:95%;
   margin:0 auto;
@@ -17,10 +24,14 @@
   line-height: 40px;
   color:#ccc;
   font-size: 14px;
+  
 
-  line-height: 40px;
-  color:#ccc;
-  font-size: 14px;
+}
+.left-i:first-child{
+  border-bottom: 1rpx solid #cccccc;
+}
+.right-centent:first-child{
+  border-bottom: 1rpx solid #cccccc;
 }
 .right-centent{
   width:100%;
@@ -58,5 +69,6 @@
   background:#ff66cc;
   position: absolute;
   bottom:20px;
+  margin-left:2.5%;
   
 }
